@@ -2,20 +2,19 @@
 
 ## Business Problem
 
-### Business Context
-TechWorld is a retail electronics store operating in multiple regions across North, South, East, and West territories. The sales department needs data-driven insights to optimize inventory management, improve customer targeting, and track revenue trends.
+### Business Setting
+TechWorld is an electronic goods retail store with branches in the North, South, East, and West territories. The sales department needs deeper data insight into the analysis of revenue trends, customers, and stock.
 
-### Data Challenge
-The company struggles to identify underperforming products, inactive customers, and revenue growth patterns across different time periods. Without clear visibility into regional performance and customer spending behavior, marketing campaigns lack precision and inventory decisions are suboptimal.
+### Data Difficulty
+The business suffers from challenges in determining the product and customer who are not performing to expectation and revenue growth trends over time. With such management, marketing is not yet powerful; neither are the activities in stock reflecting true transparency of the customers' spending habits.
 
-### Expected Outcome
-Deliver actionable insights through SQL analysis to: (1) rank top-performing products per region, (2) identify customers for targeted campaigns based on spending quartiles, (3) track month-over-month sales growth, (4) calculate running revenue totals, and (5) flag inactive customers and unsold products.
+### Anticipated Result
+Anticipated Results SQL is defined to provide insight into the following: - Top-selling products per territory - Customers targeted with marketing campaigns based on their spending habits - Monthly sales growth trend analysis - Running total revenue - Inventory that is not selling and customers who are not spending
 
 ## Success Criteria
-
 This analysis achieves the following five measurable goals using window functions:
 
-1. **Top Products per Region** → Use `DENSE_RANK()` to identify the top 5 revenue-generating products in each region for inventory prioritization
+1. **Top Products per Region** → Use `DENSE_RANK()` to identify the top 5 revenue-generating products in every region for inventory prioritization
 2. **Running Monthly Sales Totals** → Use `SUM() OVER()` with ORDER BY to calculate cumulative revenue over time
 3. **Month-over-Month Growth Analysis** → Use `LAG()` to compare monthly sales and compute growth rates for trend analysis
 4. **Customer Quartile Segmentation** → Use `NTILE(4)` to divide customers into Gold, Silver, Bronze, and Basic tiers based on total spending
@@ -150,7 +149,7 @@ erDiagram
 
 ## Integrity Statement
 
-All sources referenced in this project have been properly cited above. The database schema design, query implementations, and business analysis represent original work completed independently for this assignment. While official documentation and tutorials were consulted for syntax reference and best practices, all SQL queries were written from scratch and adapted to the specific TechWorld business scenario. No AI-generated content was copied without attribution or adaptation.
+All sources were properly cited. Implementations and analysis represent original work. No AIgenerated content was copied without attribution or adaptation.
 
 **Personal Contribution:** This project demonstrates hands-on implementation of SQL JOINs and window functions applied to a realistic business case, with all queries tested and verified for accuracy.
 
